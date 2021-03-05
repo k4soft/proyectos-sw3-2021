@@ -1,14 +1,32 @@
 package co.com.k4soft.apipersona2021.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
-@Getter
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+
+@Entity
+@Table(name="persona")
+@Data
 @AllArgsConstructor
 public class Persona {
-	
+	@Id
+	@GeneratedValue
+	@Column(name="idpersona")
 	private Integer idPersona;
+	@ManyToOne
+	@JoinColumn(name = "idtipodocumento")
+	private TipoDocumento tipoDocumento;
+	@Column(name="nombres")
 	private String nombres;
+	@Column(name="apellidos")
 	private String apellidos;
 
 }

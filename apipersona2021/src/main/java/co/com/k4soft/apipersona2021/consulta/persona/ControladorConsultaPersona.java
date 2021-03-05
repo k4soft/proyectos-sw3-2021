@@ -1,4 +1,4 @@
-package co.com.k4soft.apipersona2021.consulta;
+package co.com.k4soft.apipersona2021.consulta.persona;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.com.k4soft.apipersona2021.consulta.service.PersonaService;
 import co.com.k4soft.apipersona2021.model.Persona;
+import co.com.k4soft.apipersona2021.servicio.PersonaService;
 
 @RestController
 @RequestMapping("/v1/persona")

@@ -1,4 +1,4 @@
-package co.com.k4soft.apipersona2021.consulta.service;
+package co.com.k4soft.apipersona2021.servicio;
 
 import java.util.List;
 
