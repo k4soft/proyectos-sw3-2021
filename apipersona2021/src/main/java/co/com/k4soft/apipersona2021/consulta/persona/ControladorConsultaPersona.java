@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.com.k4soft.apipersona2021.model.Persona;
-import co.com.k4soft.apipersona2021.servicio.PersonaService;
+import co.com.k4soft.apipersona2021.servicio.persona.consulta.ConsultaPersonaService;
 
 @RestController
 @RequestMapping("/v1/persona")
 public class ControladorConsultaPersona {
 	
 	@Autowired
-	private PersonaService personaService;
+	private ConsultaPersonaService personaService;
 	
 	@GetMapping
-	List<Persona> findAll(){
+	Iterable<Persona> findAll(){
 		return personaService.findAll();
 	}
 	
