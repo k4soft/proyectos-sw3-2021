@@ -1,27 +1,25 @@
 package co.com.k4soft.apipersona2021.servicio.persona.consulta.impl;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import co.com.k4soft.apipersona2021.model.Persona;
-import co.com.k4soft.apipersona2021.repository.PersonaRepository;
-import co.com.k4soft.apipersona2021.servicio.persona.consulta.ConsultaPersonaService;
+import co.com.k4soft.apipersona2021.model.Estudiante;
+import co.com.k4soft.apipersona2021.repository.EstudianteRepository;
+import co.com.k4soft.apipersona2021.servicio.persona.consulta.ConsultaEstudianteService;
 
 @Service
-public class ConsultaPersonaServiceImpl implements ConsultaPersonaService {
+public class ConsultaPersonaServiceImpl implements ConsultaEstudianteService {
 	
 	@Autowired
-	private PersonaRepository personaRepository;
+	private EstudianteRepository personaRepository;
 
 	@Override
-	public Iterable<Persona> findAll() {
+	public Iterable<Estudiante> findAll() {
 		return personaRepository.findAll();
 	}
 
 	@Override
-	public Persona findById(Integer idPersona) {
+	public Estudiante findById(Integer idPersona) {
 		return personaRepository.findById(idPersona).orElse(null);
 	}
 

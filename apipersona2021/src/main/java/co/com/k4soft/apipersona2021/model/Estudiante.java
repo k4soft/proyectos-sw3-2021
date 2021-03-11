@@ -13,17 +13,22 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name="persona")
+@Table(name="estudiante")
 @Data
 @NoArgsConstructor
-public class Persona {
+public class Estudiante {
 	@Id
 	@GeneratedValue
-	@Column(name="idpersona")
-	private Integer idPersona;
+	@Column(name="idestudiante")
+	private Integer idEstudiante;
+	@Column(name="numerodocumento")
+	private String numeroDocumento;
 	@ManyToOne
 	@JoinColumn(name = "idtipodocumento")
 	private TipoDocumento tipoDocumento;
+	@ManyToOne
+	@JoinColumn(name = "idinstitucioneducativa")
+	private InstitucionEducativa institucionEducativa;
 	@Column(name="nombres")
 	private String nombres;
 	@Column(name="apellidos")

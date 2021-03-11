@@ -1,7 +1,5 @@
 package co.com.k4soft.apipersona2021.consulta.persona;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,25 +8,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.com.k4soft.apipersona2021.model.Persona;
-import co.com.k4soft.apipersona2021.servicio.persona.consulta.ConsultaPersonaService;
+import co.com.k4soft.apipersona2021.model.Estudiante;
+import co.com.k4soft.apipersona2021.servicio.persona.consulta.ConsultaEstudianteService;
 
 @RestController
-@RequestMapping("/v1/persona")
+@RequestMapping("/v1/estudiante")
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET})
-public class ControladorConsultaPersona {
+public class ControladorConsultaEstudiante {
 	
 	@Autowired
-	private ConsultaPersonaService personaService;
+	private ConsultaEstudianteService estudianteService;
 	
 	@GetMapping
-	Iterable<Persona> findAll(){
-		return personaService.findAll();
+	Iterable<Estudiante> findAll(){
+		return estudianteService.findAll();
 	}
 	
-	@GetMapping("/{idPersona}")
-	Persona findById(@PathVariable("idPersona") Integer idPersona){
-		return personaService.findById(idPersona);
+	@GetMapping("/{idEstudiante}")
+	Estudiante findById(@PathVariable("idEstudiante") Integer idEstudiante){
+		return estudianteService.findById(idEstudiante);
 	}
 
 }

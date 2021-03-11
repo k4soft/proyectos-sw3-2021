@@ -3,20 +3,21 @@ package co.com.k4soft.apipersona2021.servicio.persona.creacion.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import co.com.k4soft.apipersona2021.model.Persona;
-import co.com.k4soft.apipersona2021.repository.PersonaRepository;
-import co.com.k4soft.apipersona2021.servicio.persona.creacion.CreacionPersonaService;
+import co.com.k4soft.apipersona2021.model.Estudiante;
+import co.com.k4soft.apipersona2021.repository.EstudianteRepository;
+import co.com.k4soft.apipersona2021.servicio.persona.creacion.CreacionEstudianteService;
 
 
 @Service
-public class CreacionPersonaServiceImpl implements CreacionPersonaService {
+public class CreacionPersonaServiceImpl implements CreacionEstudianteService {
 	
 	@Autowired
-	private PersonaRepository personaRepository;
+	private EstudianteRepository personaRepository;
 
 	@Override
-	public void ejecutar(Persona persona) {
-		personaRepository.save(persona);
+	public Integer ejecutar(Estudiante estudiante){
+		personaRepository.save(estudiante);
+		return estudiante.getIdEstudiante();
 	}
 
 }
