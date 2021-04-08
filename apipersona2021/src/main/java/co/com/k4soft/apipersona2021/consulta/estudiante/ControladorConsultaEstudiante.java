@@ -1,4 +1,4 @@
-package co.com.k4soft.apipersona2021.consulta.persona;
+package co.com.k4soft.apipersona2021.consulta.estudiante;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.com.k4soft.apipersona2021.model.Estudiante;
-import co.com.k4soft.apipersona2021.servicio.persona.consulta.ConsultaEstudianteService;
+import co.com.k4soft.apipersona2021.servicio.estudiante.consulta.ConsultaEstudianteService;
 
 @RestController
 @RequestMapping("/v1/estudiante")

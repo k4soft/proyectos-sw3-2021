@@ -7,7 +7,7 @@ import co.com.k4soft.apipersona2021.aplicacion.ComandoRespuesta;
 import co.com.k4soft.apipersona2021.aplicacion.manejador.ManejadorComandoRespuesta;
 import co.com.k4soft.apipersona2021.comando.converter.estudiante.EstudianteConverter;
 import co.com.k4soft.apipersona2021.comando.dto.persona.EstudianteDTO;
-import co.com.k4soft.apipersona2021.servicio.persona.creacion.CreacionEstudianteService;
+import co.com.k4soft.apipersona2021.servicio.estudiante.creacion.CreacionEstudianteService;
 
 @Component
 public class ManejadorCrearEstudiante implements ManejadorComandoRespuesta<EstudianteDTO, ComandoRespuesta<Integer>>{
