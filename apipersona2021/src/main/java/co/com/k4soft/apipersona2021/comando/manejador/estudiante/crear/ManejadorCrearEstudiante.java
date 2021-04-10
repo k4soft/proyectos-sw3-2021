@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import co.com.k4soft.apipersona2021.aplicacion.ComandoRespuesta;
 import co.com.k4soft.apipersona2021.aplicacion.manejador.ManejadorComandoRespuesta;
 import co.com.k4soft.apipersona2021.comando.converter.estudiante.EstudianteConverter;
-import co.com.k4soft.apipersona2021.comando.dto.persona.EstudianteDTO;
+import co.com.k4soft.apipersona2021.comando.dto.estudiante.EstudianteDTO;
 import co.com.k4soft.apipersona2021.servicio.estudiante.creacion.CreacionEstudianteService;
 
 @Component

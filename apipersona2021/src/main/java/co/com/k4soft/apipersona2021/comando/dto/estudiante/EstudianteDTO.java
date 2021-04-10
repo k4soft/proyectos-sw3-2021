@@ -1,4 +1,4 @@
-package co.com.k4soft.apipersona2021.comando.dto.persona;
+package co.com.k4soft.apipersona2021.comando.dto.estudiante;
 
 import lombok.Data;
 
