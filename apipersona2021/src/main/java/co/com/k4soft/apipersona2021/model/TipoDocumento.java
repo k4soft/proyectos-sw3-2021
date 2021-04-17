@@ -19,6 +19,5 @@ public class TipoDocumento {
 	@Column(name = "nombredocumento")
 	private String nombreDocumento;
 	
-	
 
 }
