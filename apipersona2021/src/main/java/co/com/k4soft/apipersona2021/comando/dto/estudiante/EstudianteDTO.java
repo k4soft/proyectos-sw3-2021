@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class EstudianteDTO {
 	
+	private Integer IdEstudiante;
 	private Integer idTipoDocumento;
 	private String numeroDocumento;
 	private String nombres;  
