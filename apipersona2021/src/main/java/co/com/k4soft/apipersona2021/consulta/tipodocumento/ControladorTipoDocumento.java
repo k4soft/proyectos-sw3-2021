@@ -13,7 +13,6 @@ import co.com.k4soft.apipersona2021.servicio.tipodocumento.consulta.ConsultaTipo
 
 @RestController
 @RequestMapping("/v1/tipo-documento")
-@CrossOrigin(origins = "*", methods= {RequestMethod.GET})
 public class ControladorTipoDocumento {
 	
 	@Autowired

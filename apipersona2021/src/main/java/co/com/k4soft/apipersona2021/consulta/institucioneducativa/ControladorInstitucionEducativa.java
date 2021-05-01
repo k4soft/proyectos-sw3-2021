@@ -12,7 +12,6 @@ import co.com.k4soft.apipersona2021.servicio.instituacioneducativa.consulta.Inst
 
 @RestController
 @RequestMapping("/v1/instituciones-educativas")
-@CrossOrigin(origins = "*", methods= {RequestMethod.GET})
 public class ControladorInstitucionEducativa {
 	
 	@Autowired
