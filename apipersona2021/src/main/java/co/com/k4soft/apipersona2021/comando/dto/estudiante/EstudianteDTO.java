@@ -11,6 +11,4 @@ public class EstudianteDTO {
 	private String nombres;  
 	private String apellidos;
 	private Integer idInstitucionEducativa;
-
-
 }
